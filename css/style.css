@@ -1,0 +1,87 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUIRegular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUILight.woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUISemiBold.woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/SegoeUIBold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+div,
+article,
+ul {
+  outline: 1px dashed orangered;
+}
+
+h2,
+h3,
+b,
+p,
+a,
+li {
+  outline: 1px dashed #888888;
+}
+
+.main-navigation {
+  color: #ffffff;
+  background-color: #ae3f7e;
+}
+
+.main-menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  /*-webkit-padding-start: 0;*/
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 5%; /* 60/1200 */
+  margin-right: 52px;
+  vertical-align: top;
+}
+
+.main-menu li:last-of-type {
+  margin-right: 0;
+}
+
+.main-menu a {
+  display: inline-block;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 1em; /* 16px/16px */
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+}
