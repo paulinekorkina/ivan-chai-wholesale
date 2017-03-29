@@ -57,11 +57,17 @@ li {
 .main-header {
   /*padding-bottom: 10px;*/
   margin-bottom: 86px;
+  padding-top: 156px; /* маргин меню 100px и его высота 56px */
   background: url("../img/header.jpg") top center no-repeat;
 }
 
 .main-navigation {
-  margin-bottom: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  /*margin-bottom: 100px;*/
   color: #ffffff;
   background-color: #ae3f7e;
   text-align: center;
