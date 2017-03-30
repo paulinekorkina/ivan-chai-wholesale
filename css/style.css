@@ -44,7 +44,7 @@ button {
   font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-/*div,
+div,
 article,
 ul {
   outline: 1px dashed orangered;
@@ -57,7 +57,7 @@ p,
 a,
 li {
   outline: 1px dashed #888888;
-}*/
+}
 
 .main-header {
   /*padding-bottom: 10px;*/
@@ -120,11 +120,18 @@ li {
 
 .logo {
   flex-basis: 600px;
-  padding-top: 3px;
+  margin-top: -75px; /* Отрицательный отступ для подсветки логотипа */
+  margin-left: -75px;
+  padding-top: 78px;
+  padding-left: 75px;
+  background: url("../img/backlight-logo.png") top left no-repeat;
 }
 
 .logo img {
   margin-bottom: 4px;
+  margin-left: -75px;
+  padding-left: 75px;
+
 }
 
 .logo h1 {
@@ -245,10 +252,13 @@ li {
 }
 
 .catalog {
+  background: url("../img/catalog-background.jpg") top center no-repeat;
+}
+
+.catalog-wrap {
   max-width: 1200px;
   margin: 0 auto 110px auto;
   padding: 20px 0 93px 0;
-  background: url("../img/catalog-background.png") top center no-repeat;
 }
 
 .catalog-item {
@@ -428,6 +438,7 @@ li {
   width: 155px;
   padding: 8px 17px;
   font-size: 1em; /* 16/16 */
+  background: none;
   border: 1px solid #6e6e6e;
 }
 
@@ -504,6 +515,42 @@ li {
 
 .catalog-item:nth-child(2) .item-heading {
   margin-right: -55px;
+}
+
+.catalog-item:nth-child(2) {
+  padding-bottom: 80px;
+}
+
+.catalog-item:nth-child(8) {
+  padding-bottom: 45px;
+}
+
+.catalog-item:nth-child(8) .item-img {
+  margin-top: -25px;
+}
+
+.catalog-item:nth-child(9),
+.catalog-item:nth-child(10) {
+  padding-top: 75px;
+}
+
+.catalog-item:nth-child(13) .item-img {
+  margin-top: -40px;
+}
+
+.catalog-item:nth-child(8) .item-img,
+.catalog-item:nth-child(10) .item-img,
+.catalog-item:nth-child(12) .item-img,
+.catalog-item:nth-child(14) .item-img,
+.catalog-item:nth-child(16) .item-img,
+.catalog-item:nth-child(18) .item-img {
+  margin-right: -25px;
+}
+
+.catalog-item:nth-child(19),
+.catalog-item:nth-child(20),
+.catalog-item:nth-child(21) {
+  padding-top: 80px;
 }
 
 .order {
@@ -822,7 +869,7 @@ li {
 
 .reviews {
   max-width: 1200px;
-  margin: 0 auto 110px auto;
+  margin: 0 auto 157px auto;
   text-align: center;
 }
 
@@ -835,20 +882,124 @@ li {
   text-transform: uppercase;
 }
 
-.review-item {
+.reviews-wrap {
   width: 70.08333333333333%; /* 841/1200 */
   margin-bottom: 80px;
+  padding: 38px 0 35px 0;
+  background-color: #ffffff;
+}
+
+.review-item {
+  margin-bottom: 37px;
   text-align: left;
 }
 
+.review-item:last-child {
+  margin-bottom: 0;
+}
+
 .review-avatar {
+  position: relative;
   float: left;
   width: 11.17717003567182%; /* 94/841 */
   text-align: right;
 }
 
+.review-avatar img {
+  border-radius: 3px;
+}
+
+.vk-icon::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  bottom: -4px;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url("../img/sprite.png") -5px -271px no-repeat;
+  border-radius: 50%;
+}
+
 .review-main {
   margin-left: 13.07966706302021%; /* 110/841 */
+}
+
+.review-name {
+  display: inline-block;
+  margin: 0 15px 0 0;
+  font-weight: 700;
+  font-size: 1em;
+}
+
+.social-top {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.review-time {
+  margin: 0 auto 0 0;
+  color: #c3bec2;
+}
+
+.social-top a {
+  display: block;
+  width: 18px;
+  height: 18px;
+  font-size: 0;
+  background: url("../img/sprite.png") no-repeat;
+}
+
+.social-top .copy-link {
+  margin-right: 15px;
+  background-position: -5px -117px;
+}
+
+.social-top .share {
+  margin-right: 15px;
+  background-position: -5px -243px;
+}
+
+.social-top .action-3 {
+  background-position: -5px -215px;
+}
+
+.review-text {
+  margin: 0 0 10px 0;
+}
+
+.social-bottom {
+  display: flex;
+}
+
+.reply {
+  margin: 0 auto 0 0;
+  color: #78a771;
+}
+
+.like-btn,
+.dislike-btn {
+  display: block;
+  width: 22px;
+  height: 25px;
+  background: url("../img/sprite.png") no-repeat;
+}
+
+.like-btn {
+  margin-right: 14px;
+  font-size: 0;
+  background-position: -5px -180px;
+}
+
+.dislike-btn {
+  margin-right: 20px;
+  font-size: 0;
+  background-position: -5px -145px;
+}
+
+.like-count {
+  color: #78a771;
 }
 
 .more-reviews {
@@ -926,6 +1077,7 @@ li {
 .vk-vidget {
   flex-basis: 43.58333333333333%; /* 523/1200 */
   padding-top: 7px;
+  background: url("../img/vkgroup.jpg");
 }
 
 .feedback {
