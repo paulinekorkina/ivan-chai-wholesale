@@ -32,6 +32,10 @@ body {
   font-style: normal;
 }
 
+body {
+  background-color: #f8f8f8;
+}
+
 body,
 select,
 input,
@@ -40,7 +44,7 @@ button {
   font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-div,
+/*div,
 article,
 ul {
   outline: 1px dashed orangered;
@@ -53,13 +57,13 @@ p,
 a,
 li {
   outline: 1px dashed #888888;
-}
+}*/
 
 .main-header {
   /*padding-bottom: 10px;*/
   margin-bottom: 86px;
   padding-top: 156px; /* маргин меню 100px и его высота 56px */
-  background: url("../img/header.jpg") top center no-repeat;
+  background: url("../img/header.png") top center no-repeat;
 }
 
 .main-navigation {
@@ -244,7 +248,7 @@ li {
   max-width: 1200px;
   margin: 0 auto 110px auto;
   padding: 20px 0 93px 0;
-  background: url("../img/catalog-background.jpg") top center no-repeat;
+  background: url("../img/catalog-background.png") top center no-repeat;
 }
 
 .catalog-item {
@@ -840,7 +844,6 @@ li {
 .review-avatar {
   float: left;
   width: 11.17717003567182%; /* 94/841 */
-  background-color: yellow;
   text-align: right;
 }
 
