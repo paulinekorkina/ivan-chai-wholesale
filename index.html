@@ -1029,12 +1029,14 @@
         © 2017 «Кукуйка»
       </p>
     </footer>
-    <div class="callback-modal">
+    <div class="callback-overlay callback-overlay-open"></div>
+    <div class="callback-modal callback-modal-open">
       <h2 class="callback-heading">Введите Ваш номер телефона:</h2>
+      <button class="close-btn"></button>
       <form class="callback-form" action="">
         <label for="callback-phone">+7</label>
         <input id="callback-phone" class="callback-phone" type="text">
-        <button class="btn callback-btn" type="submit">Жду звонка</button>
+        <button class="btn callback-modal-btn" type="submit">Жду звонка</button>
       </form>
     </div>
   </body>
