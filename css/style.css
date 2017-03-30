@@ -4,6 +4,11 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: content-box;
+  /*line-height: normal;*/
+}
+
 @font-face {
   font-family: "Segoe UI";
   src: url("../fonts/SegoeUIRegular.woff");
@@ -34,6 +39,12 @@ body {
 
 body {
   background-color: #f8f8f8;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+h2, h3 {
+  font-size: 16px;
 }
 
 body,
@@ -69,9 +80,8 @@ li {
 .main-navigation {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
   z-index: 10;
+  width: 100%;
   /*margin-bottom: 100px;*/
   color: #ffffff;
   background-color: #ae3f7e;
@@ -129,9 +139,8 @@ li {
 
 .logo img {
   margin-bottom: 4px;
-  margin-left: -75px;
-  padding-left: 75px;
-
+/*  margin-left: -75px;
+  padding-left: 75px;*/
 }
 
 .logo h1 {
@@ -174,6 +183,14 @@ li {
   text-transform: uppercase;
   vertical-align: top;
   background-color: #92c329;
+}
+
+.callback-btn:hover,
+.callback-btn:active,
+.callback-btn:focus,
+.callback-btn:visited {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .contacts-tip {
@@ -361,13 +378,13 @@ li {
 .bigger {
   display: block;
   font-weight: 700;
-  font-size: 1.333333333333333em; /* 32/24 */
+  font-size: 2em; /* 32/16 */
 }
 
 .smaller {
   margin-right: 12px;
   font-weight: 500;
-  font-size: 1em; /* 24/24 */
+  font-size: 1.5em; /* 24/16 */
 }
 
 .more {
@@ -375,12 +392,20 @@ li {
   margin-top: 4px;
   padding: 3px 18px;
   font-weight: 500;
-  font-size: 0.4583333333333333em; /* 11/24 */
+  font-size: 0.6875em; /* 11/16 */
   color: #141414;
   text-decoration: none;
   text-transform: uppercase;
   vertical-align: top;
   border: 1px solid #151515;
+}
+
+.more:hover,
+.more:focus,
+.more:visited,
+.more:active {
+  color: #141414;
+  text-decoration: none;
 }
 
 .item-description {
@@ -1277,6 +1302,7 @@ textarea:-ms-input-placeholder {
   background-color: none;
   background: url("../img/sprite.png") -5px -305px no-repeat;
   border: none;
+  outline: none;
 }
 
 .callback-heading {
@@ -1349,13 +1375,59 @@ textarea:-ms-input-placeholder {
   border-radius: 3px;
 }
 
-.callback-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 90;
+.modal-open {
+  overflow: visible;
+}
+
+/*.modal {
+  overflow: visible;
+}*/
+
+/*.modal-open .modal {
+  overflow-x: visible;
+  overflow-y: visible;
+}*/
+
+.modal-scrollbar-measure {
+  overflow: visible;
+}
+
+.modal-description {
+  /*position: fixed;
+  top: 25%;
+  left: 50%;
+  right: 0;
+  z-index: 99;
+  width: 671px;
+  height: 416px;
+  margin-left: -335px;
+  text-align: center;*/
+  background: #ffffff;
+}
+
+.close-desc-btn {
+  position: absolute;
+  top: 23px;
+  right: 25px;
   display: block;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.77);
+  width: 21px;
+  height: 21px;
+  background-color: none;
+  background: url("../img/sprite.png") -5px -305px no-repeat;
+  border: none;
+  outline: none;
+}
+
+.item-desc-heading {
+  margin: 83px 0 58px 0;
+  font-weight: 500;
+  font-size: 1.875em; /* 30/16 */
+  color: #272528;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.item-desc-img {
+  float: left;
+  margin-right: 15px;
 }

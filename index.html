@@ -6,10 +6,45 @@
     <meta name="viewport" content="width=device-width; initial-scale=1.0">
     <meta name="description" content="">
     <title>Интернет-магазин иван-чая</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div id="callbackModal" class="modal fade">
+      <div class="modal-dialog modal-sm">
+        <div class="callback-modal modal-content">
+          <h2 class="callback-heading">Введите Ваш номер телефона:</h2>
+          <button class="close-btn" data-dismiss="modal"></button>
+          <form class="callback-form modal-body" action="">
+            <label for="callback-phone">+7</label>
+            <input id="callback-phone" class="callback-phone" type="text">
+            <button class="btn callback-modal-btn" type="submit">Жду звонка</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="item1Modal" class="modal fade">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-description modal-content">
+          <h2 class="item-desc-heading">Черный гранулированный иван-чай</h2>
+          <button class="close-desc-btn" data-dismiss="modal"></button>
+          <div class="item-description modal-body">
+            <img class="item-desc-img" src="http://placehold.it/300x200" alt="">
+            <p class="item-desc-text">
+              Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании форм развития. Значимость этих проблем настолько очевидна, что постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации новых предложений. Значимость этих проблем настолько очевидна, что рамки и место обучения кадров играет важную роль в формировании форм развития.
+            </p>
+            <p class="item-desc-text">
+              Товарищи! сложившаяся структура организации в значительной степени обуславливает создание дальнейших направлений развития. Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач.
+            </p>
+            <p class="item-desc-text">
+              Идейные соображения высшего порядка, а также сложившаяся структура организации позволяет выполнять важные задания по разработке форм развития. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки направлений прогрессивного развития. Значимость этих проблем настолько очевидна, что сложившаяся структура организации требуют определения и уточнения форм развития.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <header class="main-header">
       <nav class="main-navigation">
         <ul class="main-menu">
@@ -30,7 +65,7 @@
         <div class="contacts">
           <p class="free-call">Бесплатный звонок для жителей России</p>
           <p class="header-phone">8 (800) 505-42-80</p>
-          <a class="callback-btn" href="#">Заказать звонок</a>
+          <a class="callback-btn" href="#callbackModal" data-toggle="modal">Заказать звонок</a>
           <p class="contacts-tip">Любой Иван-чай можно оплатить при получении на почте!</p>
         </div>
         <div class="header-text">
@@ -46,7 +81,7 @@
           <a class="add-review" href="#">добавить отзыв</a>
         </div>
       </div>
-      <a href="#" class="down-btn">Вниз</a>
+      <div class="down-btn">Вниз</div>
     </header>
     <main>
 
@@ -67,7 +102,7 @@
               <h2 class="item-heading">
                 <span class="bigger">Черный гранулированный</span>
                 <span class="smaller">иван-чай</span>
-                <a class="more" href="#">Подробнее</a>
+                <a class="more" href="#item1Modal" data-toggle="modal">Подробнее</a>
               </h2>
               <p class="item-description">Классический ферментированный Иван-чай, который любят все.</p>
               <p class="item-description">Чуть терпкий, цветочно-пряный аромат. Насыщенный вкус.</p>
@@ -1029,15 +1064,7 @@
         © 2017 «Кукуйка»
       </p>
     </footer>
-    <div class="callback-overlay callback-overlay-open"></div>
-    <div class="callback-modal callback-modal-open">
-      <h2 class="callback-heading">Введите Ваш номер телефона:</h2>
-      <button class="close-btn"></button>
-      <form class="callback-form" action="">
-        <label for="callback-phone">+7</label>
-        <input id="callback-phone" class="callback-phone" type="text">
-        <button class="btn callback-modal-btn" type="submit">Жду звонка</button>
-      </form>
-    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
   </body>
 </html>
