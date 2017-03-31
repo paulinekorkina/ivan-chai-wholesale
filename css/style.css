@@ -1804,7 +1804,7 @@ textarea:-ms-input-placeholder {
 
 @media screen and (max-width: 640px) {
   .header-text {
-    width: 80%;
+    width: 230px;
     font-size: 0.75em;
   }
 
