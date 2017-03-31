@@ -88,8 +88,8 @@ li {
   text-align: center;
 }
 
-.menu-mobile-input,
-.menu-mobile-btn {
+.mobile-menu-input,
+.mobile-menu-btn {
   display: none;
 }
 
@@ -544,6 +544,8 @@ li {
   max-width: 1200px;
   margin: 0 auto 132px auto;
   text-align: center;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .order h2 {
@@ -619,6 +621,8 @@ li {
 .payment {
   max-width: 1200px;
   margin: 0 auto 117px auto;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .payment h2 {
@@ -658,6 +662,8 @@ li {
 .delivery {
   max-width: 1200px;
   margin: 0 auto 95px auto;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .delivery h2 {
@@ -704,6 +710,8 @@ li {
 .benefit {
   max-width: 1200px;
   margin: 0 auto 110px auto;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .benefit h2 {
@@ -743,6 +751,8 @@ li {
 .features {
   max-width: 1200px;
   margin: 0 auto 110px auto;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .features h2 {
@@ -787,6 +797,8 @@ li {
   max-width: 1200px;
   margin: 0 auto 157px auto;
   text-align: center;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 
 .reviews h2 {
@@ -807,6 +819,7 @@ li {
 
 .review-item {
   margin-bottom: 37px;
+  padding-right: 10px;
   text-align: left;
 }
 
@@ -1699,6 +1712,10 @@ textarea:-ms-input-placeholder {
     font-size: 1em;
   }
 
+  .feature-img3 {
+    width: 25%;
+  }
+
 }
 
 @media screen and (max-width: 640px) {
@@ -1758,4 +1775,22 @@ textarea:-ms-input-placeholder {
   .phone-order {
     font-size: 0.625em;
   }
+
+  .feature-img3 {
+    width: 24%;
+  }
+
+  .social-top {
+    display: block;
+  }
+
+  .review-time {
+    margin-bottom: 10px;
+  }
+
+  .social-top a {
+    display: inline-block;
+    vertical-align: top;
+  }
+
 }
