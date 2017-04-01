@@ -444,12 +444,17 @@ li {
   display: inline-block;
   vertical-align: top;
   width: 134px;
-  overflow: hidden;
-  background: url("../img/arrow.png") 107px 37px no-repeat;
+  /*overflow: hidden;
+  background: url("../img/arrow.png") 107px 37px no-repeat;*/
+}
+
+.weight-wrap {
+  margin-right: 21px;
+  margin-bottom: 28px;
 }
 
 .quantity-wrap {
-  background-position: 83px 37px;
+  width: 110px;
 }
 
 .weight-wrap::after,
@@ -462,8 +467,6 @@ li {
   height: 40px;
   width: 1px;
   background-color: #6e6e6e;
-  /*border: 1px solid #6e6e6e;*/
-  /*background: url("../img/arrow.png") center center no-repeat;*/
 }
 
 .weight-wrap::before,
@@ -480,15 +483,6 @@ li {
   /*background: url("../img/arrow.png") center center no-repeat;*/
 }
 
-.weight-wrap {
-  margin-right: 21px;
-  margin-bottom: 28px;
-}
-
-.quantity-wrap {
-  width: 110px;
-}
-
 .order-params label {
   display: block;
   margin-bottom: 6px;
@@ -498,15 +492,36 @@ li {
 }
 
 .order-params select {
-  width: 175px;
+  /*width: 175px;*/
   height: 40px;
-  margin-right: -20px;
-  /*padding: 8px 17px;*/
+  /*margin-right: -20px;*/
   padding: 0 17px;
   box-sizing: border-box;
+  -webkit-appearance: none;
   font-size: 1em; /* 16/16 */
-  background: none;
+  background-color: transparent;
   border: 1px solid #6e6e6e;
+  background-image: url("../img/arrow.png");
+  background-repeat: no-repeat;
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  -ms-appearance: none;
+  appearance: none!important;
+}
+
+.order-params select::-ms-expand {
+  display: none;
+}
+
+.weight-wrap select {
+  width: 134px;
+  background-position: 107px 17px;
+}
+
+.quantity-wrap select {
+  width: 110px;
+  background-position: 83px 17px;
 }
 
 .price {
