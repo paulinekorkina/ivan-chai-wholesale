@@ -457,7 +457,7 @@ li {
   width: 110px;
 }
 
-.weight-wrap::after,
+/*.weight-wrap::after,
 .quantity-wrap::after {
   content: "";
   position: absolute;
@@ -467,7 +467,7 @@ li {
   height: 40px;
   width: 1px;
   background-color: #6e6e6e;
-}
+}*/
 
 .weight-wrap::before,
 .quantity-wrap::before {
