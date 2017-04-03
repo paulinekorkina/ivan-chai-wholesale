@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="description" content="">
+    <title>Интернет-магазин иван-чая</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Модальное окно заказа обратного звонка -->
+
+    <div id="callbackModal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="callback-modal modal-content">
+          <h2 class="callback-heading">Введите Ваш номер телефона:</h2>
+          <button class="close-btn" data-dismiss="modal"></button>
+          <form class="callback-form modal-body">
+            <label for="callback-phone">+7</label>
+            <input id="callback-phone" class="callback-phone" type="text">
+            <button class="btn callback-modal-btn" type="submit">Жду звонка</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно добавления отзывов -->
+
+    <div id="reviewModal" class="modal fade">
+      <div class="modal-dialog modal-lg review-modal-wrap">
+        <div class="review-modal modal-content">
+          <button class="reviews-close-btn" data-dismiss="modal">Закрыть</button>
+          <div class="review-body modal-body">
+            <div class="modal-review-item">
+              <h3 class="modal-review-img tea-reviews">Отзыв о нашем иван-чае</h3>
+              <div class="modal-review-info">
+                <p class="modal-review-text">
+                  Добавьте отзыв и получите скидку 3%
+                </p>
+                <p class="modal-review-text">
+                  Добавьте отзыв с фото нашей продукции получите скидку 5%
+                </p>
+              </div>
+              <a class="modal-review-btn" href="#">Оставить отзыв</a>
+            </div>
+            <div class="modal-review-item">
+              <h3 class="modal-review-img honey-reviews">Отзыв на мёд</h3>
+              <div class="modal-review-info">
+                <p class="modal-review-text">
+                  Добавьте отзыв и получите скидку 3%
+                </p>
+                <p class="modal-review-text">
+                  Добавьте отзыв с фото нашей продукции получите скидку 5%
+                </p>
+              </div>
+              <a class="modal-review-btn" href="#">Оставить отзыв</a>
+            </div>
+            <div class="modal-review-item ask-question-item">
+              <h3 class="modal-review-img ask-question">Задать вопрос</h3>
+              <div class="modal-review-info">
+                <p class="modal-review-text">
+                  Если у вас есть вопрос по нашей продукции, оплате, доставке, или другие вопросы мы с радостью Вам ответим!
+                </p>
+              </div>
+              <a class="modal-review-btn" href="#">Оставить отзыв</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <input class="mobile-menu-input" type="checkbox" name="mobile-menu" id="btn-menu" />
+        <label class="mobile-menu-btn" for="btn-menu">Меню</label>
+        <ul class="main-menu">
+          <li><a href="#catalog">Каталог</a></li>
+          <li><a href="#order">Как заказать?</a></li>
+          <li><a href="#payment">Оплата</a></li>
+          <li><a href="#delivery">Доставка</a></li>
+          <li><a href="#benefit">Полезные свойства</a></li>
+          <li><a href="#features">О продукции</a></li>
+          <li><a href="#reviews">Отзывы</a></li>
+        </ul>
+      </nav>
+      <div class="header-wrapper main-container clearfix">
+        <div class="logo">
+          <img src="img/logo.png" alt="Интернет-магазин иван-чая">
+          <h1>Интернет-магазин иван-чая</h1>
+        </div>
+        <div class="contacts">
+          <p class="free-call">Бесплатный звонок для жителей России</p>
+          <p class="header-phone">8 (800) 505-42-80</p>
+          <a class="callback-btn" href="#callbackModal" data-toggle="modal">Заказать звонок</a>
+          <p class="contacts-tip">Любой Иван-чай можно оплатить при получении на почте!</p>
+        </div>
+        <div class="header-text">
+          <p>Полезный и</p>
+          <p>вкусный иван-чай</p>
+          <p>от проивзодителя</p>
+          <p>по оптовым</p>
+          <p>ценам</p>
+        </div>
+        <div class="header-reviews">
+          <p class="review-number">122</p>
+          <p class="review-desc">отзыва</p>
+          <a class="add-review" href="#reviewModal" data-toggle="modal">добавить отзыв</a>
+        </div>
+      </div>
+      <div class="down-btn">Вниз</div>
+    </header>
+    <main>
+      <section class="place-order main-container">
+        <h2 class="cart-heading">Оформить заказ</h2>
+        <form class="cart-form place-order-form">
+          <table class="cart-table place-order-table">
+            <tr class="cart-head">
+              <th class="cart-name-heading" colspan="2">Название</th>
+              <th class="cart-weight-heading">Вес</th>
+              <th class="cart-quantity-heading">Количество</th>
+              <th class="cart-price-heading">Цена</th>
+              <th class="cart-delete-heading">Удалить</th>
+              <th class="cart-subtotal-heading">Всего</th>
+            </tr>
+            <tr class="cart-row">
+              <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
+              <td class="cart-name">Черный гранулированный Иван-чай</td>
+              <td class="cart-weight">
+                <div class="weight-wrap">
+                  <label for="cart-weight-1">Вес:</label>
+                  <select class="cart-weight-select" name="item-weight-1" id="cart-weight-1">
+                    <option value="100">100 гр.</option>
+                  </select>
+                </div>
+              </td>
+              <td class="cart-quantity">
+                <div class="quantity-wrap">
+                  <label for="cart-quantity-1">Количество:</label>
+                  <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-1">
+                    <option value="100">100</option>
+                  </select>
+                </div>
+              </td>
+              <td class="cart-price">
+                <span class="cart-price-value">3 000</span>
+                <span class="cart-price-currency">руб</span>
+              </td>
+              <td class="cart-delete">
+                <button class="cart-delete-icon"></button>
+              </td>
+              <td class="cart-subtotal">
+                <span class="cart-subtotal-value">6 000</span>
+                <span class="cart-subtotal-currency">руб</span>
+              </td>
+            </tr>
+            <tr class="cart-row">
+              <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
+              <td class="cart-name">Черный гранулированный Иван-чай</td>
+              <td class="cart-weight">
+                <div class="weight-wrap">
+                  <label for="cart-weight-2">Вес:</label>
+                  <select class="cart-weight-select" name="item-weight-2" id="cart-weight-2">
+                    <option value="100">100 гр.</option>
+                  </select>
+                </div>
+              </td>
+              <td class="cart-quantity">
+                <div class="quantity-wrap">
+                  <label for="cart-quantity-2">Количество:</label>
+                  <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-2">
+                    <option value="100">100</option>
+                  </select>
+                </div>
+              </td>
+              <td class="cart-price">
+                <span class="cart-price-value">3 000</span>
+                <span class="cart-price-currency">руб</span>
+              </td>
+              <td class="cart-delete">
+                <button class="cart-delete-icon"></button>
+              </td>
+              <td class="cart-subtotal">
+                <span class="cart-subtotal-value">6 000</span>
+                <span class="cart-subtotal-currency">руб</span>
+              </td>
+            </tr>
+            <tr class="cart-total">
+              <td class="cart-total-text" colspan="6">Итого</td>
+              <td class="cart-total-number">
+                <span class="cart-total-value">12 000</span>
+                <span class="cart-total-currency">руб</span>
+              </td>
+            </tr>
+          </table>
+          <h3 class="shipping-heading">Доставка</h3>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-name">Фамилия имя отчество</label>
+            <input class="order-name" id="order-name" type="text" name="order-name" required>
+          </div>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-email">Е-мейл</label>
+            <input class="order-email" id="order-email" type="text" name="order-email" required>
+          </div>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-phone">Телефон</label>
+            <input class="order-phone" id="order-phone" type="text" name="order-phone" required>
+          </div>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-city">Город</label>
+            <input class="order-city" id="order-city" type="text" name="order-city" required>
+          </div>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-region">Регион/область</label>
+            <input class="order-region" id="order-region" type="text" name="order-region" required>
+          </div>
+          <div class="input-wrapper">
+            <label class="shipping-label" for="order-zipcode">Почтовый индекс</label>
+            <input class="order-zipcode" id="order-zipcode" type="text" name="order-zipcode" required>
+          </div>
+          <div class="input-wrapper country-wrapper">
+            <label class="shipping-label" for="order-country">Страна</label>
+            <select class="order-country" id="order-country" type="text" name="order-country" required>
+              <option value="russia"></option>
+            </select>
+          </div>
+          <button class="place-order-btn" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+      <section class="vk-feedback">
+        <div class="vk-feedback-wrap main-container">
+          <div class="vk-vidget">
+          </div>
+          <div class="feedback">
+            <h2>Остались вопросы?</h2>
+            <p class="call-text">Задайте их по телефону</p>
+            <p class="main-phone">8 (800) 505-4280</p>
+            <p class="mail-text">(бесплатно по РФ), на электронную почту zakaz@yandar.ru или через форму ниже.</p>
+            <form class="feedback-form">
+              <label for="feedback-email">Ваша электронная почта:</label>
+              <input id="feedback-email" class="feedback-email" type="text" placeholder="Ваша электронная почта:">
+              <label for="feedback-phone">Ваш телефон:</label>
+              <input id="feedback-phone" class="feedback-phone" type="text" placeholder="Ваш телефон:">
+              <label for="feedback-text">Ваш вопрос:</label>
+              <textarea id="feedback-text" class="feedback-text" name="feedback-text" cols="30" rows="10" placeholder="Ваш вопрос:"></textarea>
+              <button class="btn feedback-btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="footer-copyright">
+        © 2017 «Кукуйка»
+      </p>
+    </footer>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  </body>
+</html>
