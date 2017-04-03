@@ -2019,6 +2019,11 @@ th {
     font-size: 0.75em;
     /*padding: 10px 0;*/
   }
+
+  .cart-item-count {
+    top: 12px;
+    right: 10px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -2048,6 +2053,11 @@ th {
 
   .main-menu a {
     font-size: 0.625em;
+  }
+
+  .cart-item-count {
+    top: 13px;
+    right: 11px;
   }
 
   .main-header {
@@ -2179,6 +2189,11 @@ th {
   .main-menu a {
     padding: 15px 0 15px 10px;
     font-size: 0.75em;
+  }
+
+  .cart-item-count {
+    top: 13px;
+    right: 9px;
   }
 
   .mobile-menu-input:checked ~ label + ul {
