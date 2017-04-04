@@ -1797,6 +1797,7 @@ th {
 
 .place-order-table {
   margin-bottom: 75px;
+  min-width: 750px;
 }
 
 .shipping-heading {
@@ -2034,14 +2035,35 @@ th {
     font-size: 0.75em;
     background-size: contain;
   }
+
+  /*.modal {
+    overflow: scroll;
+  }*/
+
+  /*.modal-open {
+    overflow: visible;
+  }*/
+
+  .modal {
+    overflow: visible;
+  }
+
+  .modal-open .modal {
+    overflow-x: scroll;
+    overflow-y: visible;
+  }
+
+  /*.modal-scrollbar-measure {
+    overflow: visible;
+  }*/
+
+  .modal-cart-wrap {
+    width: 820px;
+  }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 768px) {
   .review-modal-wrap {
-    width: 90%;
-  }
-
-  .modal-cart-wrap {
     width: 90%;
   }
 }
@@ -2327,7 +2349,7 @@ th {
     margin-bottom: 20px;
   }
 
-  .cart-table {
+  /*.cart-table {
     font-size: 0.875em;
   }
 
@@ -2348,10 +2370,6 @@ th {
     background-position: 54px 17px;
   }
 
-  /* 134, 110
-
-      107, 83 */
-
   .cart-table select {
     width: 100%;
     padding: 0 5px;
@@ -2360,7 +2378,7 @@ th {
   .cart-table .weight-wrap::before,
   .cart-table .quantity-wrap::before {
     right: 26px;
-  }
+  }*/
 }
 
 
