@@ -1278,24 +1278,25 @@ textarea:-ms-input-placeholder {
   font-size: 1em; /* 16/16 */
 }
 
-.callback-modal-close {
+.callback-modal-wrap {
+  width: 562px;
+  height: 348px;
+}
+
+/*.callback-modal-close {
   display: none;
 }
 
 .callback-modal-open {
   display: block;
-}
+}*/
 
 .callback-modal {
-  /*position: fixed;
-  top: 25%;
-  left: 50%;
-  right: 0;
-  z-index: 99;*/
-  /*width: 671px;
-  height: 416px;
-  margin-left: -335px;*/
-  padding-bottom: 20px;
+  height: 100%;
+  padding-top: 80px;
+  box-sizing: border-box;
+  border-radius: 0;
+  border: none;
   text-align: center;
   background: #ffffff;
 }
@@ -1314,15 +1315,15 @@ textarea:-ms-input-placeholder {
 }
 
 .callback-heading {
-  margin: 12.36959761549925% 0 58px 0; /* 83/671 */
+  margin: 0 0 38px 0;
   font-weight: 500;
-  font-size: 1.875em; /* 30/16 */
+  font-size: 1.5em; /* 24/16 */
   color: #272528;
   text-transform: uppercase;
 }
 
 .callback-form {
-  width: 70%;
+  width: 63.34519572953737%; /*356/562*/
   margin: 0 auto;
   padding: 0 10px;
   /*outline: 1px dashed yellowgreen;*/
@@ -1331,24 +1332,25 @@ textarea:-ms-input-placeholder {
 .callback-form label {
   margin-right: 5px;
   font-weight: 500;
-  font-size: 1.5em; /* 24/16 */
+  font-size: 1.125em; /* 18/16 */
   color: #1b1a1a;
 }
 
 .callback-phone {
-  width: 87.25274725274725%; /* 397/455 */
-  height: 34px;
-  margin-bottom: 62px;
+  width: 89.60674157303371%; /* 319/356 */
+  height: 40px;
+  margin-bottom: 43px;
+  box-sizing: border-box;
 }
 
 .callback-modal-btn {
   position: relative;
   display: inline-block;
-  width: 55.6043956043956%; /* 253/455 */
-  padding: 15px 0 17px 0;
+  width: 216px;
+  padding: 10px 0 11px 0;
   vertical-align: top;
   font-weight: 700;
-  font-size: 1.125em; /* 18/16 */
+  font-size: 1em; /* 16/16 */
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
