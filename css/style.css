@@ -55,7 +55,7 @@ button {
   font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-div,
+/*div,
 article,
 ul {
   outline: 1px dashed orangered;
@@ -68,7 +68,7 @@ p,
 a,
 li {
   outline: 1px dashed #888888;
-}
+}*/
 
 .main-header {
   /*padding-bottom: 10px;*/
