@@ -1519,7 +1519,9 @@ textarea:-ms-input-placeholder {
 
 .modal-full-info {
   text-align: center;
-  padding: 80px;
+  padding: 80px 74px 82px 74px;
+  border-radius: 0;
+  border: none;
   background: #ffffff url("../img/modal-background.png") center center no-repeat;
 }
 
@@ -1537,7 +1539,7 @@ textarea:-ms-input-placeholder {
 }
 
 .full-info-heading {
-  margin: 0 0 45px 0;
+  margin: 0 0 28px 0;
   color: #272528;
   text-transform: uppercase;
   text-align: center;
@@ -1546,13 +1548,14 @@ textarea:-ms-input-placeholder {
 .modal-bigger {
   display: block;
   font-weight: 700;
-  font-size: 2em; /* 32/16 */
+  margin-bottom: 10px;
+  font-size: 1.5em; /* 24/16 */
 }
 
 .modal-smaller {
   display: block;
   font-weight: 500;
-  font-size: 1.5em; /* 24/16 */
+  font-size: 1.125em; /* 18/16 */
 }
 
 .item-desc-img {
@@ -1574,14 +1577,16 @@ textarea:-ms-input-placeholder {
 }
 
 .full-info-text {
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
+  padding-right: 10px;
   font-weight: 300;
-  font-size: 1em; /* 16/16 */
+  font-size: 0.825em; /* 14/16 */
+  line-height: 1.5;
   text-align: left;
 }
 
 .full-info-text:last-of-type {
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .full-info-close {
@@ -2050,6 +2055,10 @@ th {
 
   .modal-cart-wrap {
     width: 992px;
+  }
+
+  .modal-info-wrap {
+    width: 861px;
   }
 }
 
