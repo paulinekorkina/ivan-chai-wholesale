@@ -134,7 +134,7 @@ li {
 
 .cart-item-count {
   position: absolute;
-  top: 10px;
+  top: 9px;
   right: 7px;
   font-weight: 700;
   font-size: 1em; /* 16/16 */
@@ -1665,9 +1665,13 @@ textarea:-ms-input-placeholder {
 
 .cart-table {
   width: 100%;
-  margin-bottom: 37px;
+  /*margin-bottom: 37px;*/
   font-size: 1em;
   color: #1b1a1a;
+}
+
+.modal-cart-table {
+  min-width: 750px;
 }
 
 .cart-head {
@@ -1807,6 +1811,7 @@ th {
   position: relative;
   display: inline-block;
   width: 217px;
+  margin-top: 37px;
   margin-right: 15px;
   padding: 13px 0 12px 0;
   vertical-align: top;
@@ -1836,6 +1841,10 @@ th {
   background-image: linear-gradient(#b1ea00, #6f9803);
   border: none;
   border-radius: 3px;
+}
+
+.modal-place-btn {
+  margin-top: 37px;
 }
 
 .place-order-btn::before {
@@ -1877,13 +1886,17 @@ th {
   text-align: center;
 }
 
+.table-wrap {
+  overflow-x: scroll;
+}
+
 .place-order-table {
-  margin-bottom: 75px;
+  /*margin-bottom: 75px;*/
   min-width: 750px;
 }
 
 .shipping-heading {
-  margin: 0 0 40px 0;
+  margin: 75px 0 40px 0;
   font-weight: 700;
   font-size: 1.875em; /* 30/16 */
   color: #272528;
@@ -2189,7 +2202,7 @@ th {
   }*/
 
   .modal-cart-wrap {
-    width: 820px;
+    width: 90%;
   }
 }
 
@@ -2357,6 +2370,11 @@ th {
 
   .mobile-menu-input:checked ~ label + ul {
     display: block;
+    /*display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;*/
+    max-height: calc(100vh - 40px);
+    overflow-y: scroll;
   }
 
   .header-wrapper {
@@ -2512,37 +2530,6 @@ th {
   .modal-review-item {
     margin-bottom: 20px;
   }
-
-  /*.cart-table {
-    font-size: 0.875em;
-  }
-
-  .cart-table .weight-wrap {
-    width: 90px;
-  }
-
-  .cart-table .quantity-wrap {
-    width: 75px;
-
-  }
-
-  .cart-table .cart-weight-select {
-    background-position: 69px 17px;
-  }
-
-  .cart-table .cart-quantity-select {
-    background-position: 54px 17px;
-  }
-
-  .cart-table select {
-    width: 100%;
-    padding: 0 5px;
-  }
-
-  .cart-table .weight-wrap::before,
-  .cart-table .quantity-wrap::before {
-    right: 26px;
-  }*/
 }
 
 
@@ -2581,8 +2568,13 @@ th {
   .phone-order::before,
   .all-reviews::before,
   .feedback-btn::before,
-  .full-info-close::before {
+  .full-info-close::before,
+  .place-order-btn::before {
     display: none;
+  }
+
+  .go-on-btn {
+    margin-right: 0;
   }
 
   .more-reviews,
@@ -2666,6 +2658,14 @@ th {
     padding-right: 0;
     /*align-self: center;*/
     text-align: center;
+  }
+
+  .go-on-btn {
+    margin-bottom: 10px;
+  }
+
+  .modal-place-btn {
+    margin-top: 0;
   }
 }
 

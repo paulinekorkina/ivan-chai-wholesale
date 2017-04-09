@@ -82,87 +82,89 @@
           <h2 class="cart-heading">Корзина</h2>
           <button class="cart-close-btn" data-dismiss="modal"></button>
           <form class="cart-form modal-body">
-            <table class="cart-table">
-              <tr class="cart-head">
-                <th class="cart-name-heading" colspan="2">Название</th>
-                <th class="cart-weight-heading">Вес</th>
-                <th class="cart-quantity-heading">Количество</th>
-                <th class="cart-price-heading">Цена</th>
-                <th class="cart-delete-heading">Удалить</th>
-                <th class="cart-subtotal-heading">Всего</th>
-              </tr>
-              <tr class="cart-row">
-                <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
-                <td class="cart-name">Черный гранулированный Иван-чай</td>
-                <td class="cart-weight">
-                  <div class="weight-wrap">
-                    <label for="cart-weight-1">Вес:</label>
-                    <select class="cart-weight-select" name="item-weight" id="cart-weight-1">
-                      <option value="100">100 гр.</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="cart-quantity">
-                  <div class="quantity-wrap">
-                    <label for="cart-quantity-1">Количество:</label>
-                    <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-1">
-                      <option value="100">100</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="cart-price">
-                  <span class="cart-price-value">3 000</span>
-                  <span class="cart-price-currency">руб</span>
-                </td>
-                <td class="cart-delete">
-                  <button class="cart-delete-icon"></button>
-                </td>
-                <td class="cart-subtotal">
-                  <span class="cart-subtotal-value">6 000</span>
-                  <span class="cart-subtotal-currency">руб</span>
-                </td>
-              </tr>
-              <tr class="cart-row">
-                <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
-                <td class="cart-name">Черный гранулированный Иван-чай</td>
-                <td class="cart-weight">
-                  <div class="weight-wrap">
-                    <label for="cart-weight-2">Вес:</label>
-                    <select class="cart-weight-select" name="item-weight" id="cart-weight-2">
-                      <option value="100">100 гр.</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="cart-quantity">
-                  <div class="quantity-wrap">
-                    <label for="cart-quantity-2">Количество:</label>
-                    <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-2">
-                      <option value="100">100</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="cart-price">
-                  <span class="cart-price-value">3 000</span>
-                  <span class="cart-price-currency">руб</span>
-                </td>
-                <td class="cart-delete">
-                  <button class="cart-delete-icon"></button>
-                </td>
-                <td class="cart-subtotal">
-                  <span class="cart-subtotal-value">6 000</span>
-                  <span class="cart-subtotal-currency">руб</span>
-                </td>
-              </tr>
-              <tr class="cart-total">
-                <td class="cart-total-text" colspan="6">Итого:</td>
-                <td class="cart-total-number">
-                  <span class="cart-total-value">12 000</span>
-                  <span class="cart-total-currency">руб</span>
-                </td>
-              </tr>
-            </table>
+            <div class="table-wrap modal-table-wrap">
+              <table class="cart-table modal-cart-table">
+                <tr class="cart-head">
+                  <th class="cart-name-heading" colspan="2">Название</th>
+                  <th class="cart-weight-heading">Вес</th>
+                  <th class="cart-quantity-heading">Количество</th>
+                  <th class="cart-price-heading">Цена</th>
+                  <th class="cart-delete-heading">Удалить</th>
+                  <th class="cart-subtotal-heading">Всего</th>
+                </tr>
+                <tr class="cart-row">
+                  <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
+                  <td class="cart-name">Черный гранулированный Иван-чай</td>
+                  <td class="cart-weight">
+                    <div class="weight-wrap">
+                      <label for="modal-cart-weight-1">Вес:</label>
+                      <select class="cart-weight-select" name="item-weight" id="modal-cart-weight-1">
+                        <option value="100">100 гр.</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="cart-quantity">
+                    <div class="quantity-wrap">
+                      <label for="modal-cart-quantity-1">Количество:</label>
+                      <select class="cart-quantity-select" name="item-quantity" id="modal-cart-quantity-1">
+                        <option value="100">100</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="cart-price">
+                    <span class="cart-price-value">3 000</span>
+                    <span class="cart-price-currency">руб</span>
+                  </td>
+                  <td class="cart-delete">
+                    <button class="cart-delete-icon"></button>
+                  </td>
+                  <td class="cart-subtotal">
+                    <span class="cart-subtotal-value">6 000</span>
+                    <span class="cart-subtotal-currency">руб</span>
+                  </td>
+                </tr>
+                <tr class="cart-row">
+                  <td class="cart-img"><img src="img/cart-item.png" alt="Черный гранулированный Иван-чай"></td>
+                  <td class="cart-name">Черный гранулированный Иван-чай</td>
+                  <td class="cart-weight">
+                    <div class="weight-wrap">
+                      <label for="modal-cart-weight-2">Вес:</label>
+                      <select class="cart-weight-select" name="item-weight" id="modal-cart-weight-2">
+                        <option value="100">100 гр.</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="cart-quantity">
+                    <div class="quantity-wrap">
+                      <label for="modal-cart-quantity-2">Количество:</label>
+                      <select class="cart-quantity-select" name="item-quantity" id="modal-cart-quantity-2">
+                        <option value="100">100</option>
+                      </select>
+                    </div>
+                  </td>
+                  <td class="cart-price">
+                    <span class="cart-price-value">3 000</span>
+                    <span class="cart-price-currency">руб</span>
+                  </td>
+                  <td class="cart-delete">
+                    <button class="cart-delete-icon"></button>
+                  </td>
+                  <td class="cart-subtotal">
+                    <span class="cart-subtotal-value">6 000</span>
+                    <span class="cart-subtotal-currency">руб</span>
+                  </td>
+                </tr>
+                <tr class="cart-total">
+                  <td class="cart-total-text" colspan="6">Итого</td>
+                  <td class="cart-total-number">
+                    <span class="cart-total-value">12 000</span>
+                    <span class="cart-total-currency">руб</span>
+                  </td>
+                </tr>
+              </table>
+            </div>
             <button class="go-on-btn" data-dismiss="modal">Продолжить покупки</button>
-            <button class="place-order-btn" type="submit">Оформить заказ</button>
+            <button class="place-order-btn modal-place-btn" type="submit">Оформить заказ</button>
           </form>
         </div>
       </div>
