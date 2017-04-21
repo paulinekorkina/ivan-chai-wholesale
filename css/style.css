@@ -55,7 +55,7 @@ button {
   font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-div,
+/*div,
 article,
 ul {
   outline: 1px dashed orangered;
@@ -68,7 +68,7 @@ p,
 a,
 li {
   outline: 1px dashed #888888;
-}
+}*/
 
 .main-header {
   /*padding-bottom: 10px;*/
@@ -637,6 +637,12 @@ li {
   width: 90px;
   background-position: 72px 13px;
 }
+
+/*Стили для input type="number"*/
+
+
+
+/*Окончание стилей для input type="number"*/
 
 .price {
   margin: 0;
@@ -2801,9 +2807,9 @@ th {
 
 /* KMM */
 .order-params input[id|='item-quantity'] {
-  width: 108px;
+  width: 90px;
   height: 32px;
-  padding: 0 16px;
+  padding: 0 0 0 16px;
   box-sizing: border-box;
   font-size: 0.875em;
   background-color: transparent;
