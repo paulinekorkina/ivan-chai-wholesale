@@ -460,6 +460,7 @@ li {
 .item-img img {
   max-width: 100%;
   width: 100%;
+  max-height: 485px;
   height: auto;
 }
 
@@ -633,9 +634,16 @@ li {
   background-position: 85px 13px;
 }
 
-.quantity-wrap select {
+.order-params input[id|='item-quantity'],
+.cart-form input[id|='cart-quantity'],
+.cart-form input[id|='modal-cart-quantity'] {
   width: 90px;
-  background-position: 72px 13px;
+  height: 32px;
+  padding: 0 0 0 16px;
+  box-sizing: border-box;
+  font-size: 0.875em;
+  background-color: transparent;
+  border: 1px solid #6e6e6e;
 }
 
 /*Стили для input type="number", плагин formstone*/
@@ -649,7 +657,7 @@ li {
 .fs-number-arrow {
   position: absolute;
   right: 0;
-  width: 32px;
+  width: 33px;
   height: 16px;
   font-size: 0;
 }
@@ -1871,7 +1879,9 @@ th {
   width: 108px;
 }
 
-.quantity-wrap .cart-quantity-select {
+.cart-form input[id|='cart-quantity'],
+.cart-form input[id|='modal-cart-quantity'],
+.cart-form .fs-number {
   width: 94px;
 }
 
@@ -2828,7 +2838,9 @@ th {
 }
 
 /* KMM */
-.order-params input[id|='item-quantity'] {
+
+/*.order-params input[id|='item-quantity'],
+.cart-form input[id|='cart-quantity'] {
   width: 90px;
   height: 32px;
   padding: 0 0 0 16px;
@@ -2837,6 +2849,10 @@ th {
   background-color: transparent;
   border: 1px solid #6e6e6e;
 }
+
+.cart-form input[id|='cart-quantity'] {
+  width: 94px;
+}*/
 
 .modal-full-info .item-full-info p {
   margin: 0 0 22px 0;

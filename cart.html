@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Интернет-магазин иван-чая</title>
+    <link href="css/number.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
@@ -106,9 +107,7 @@
                   <td class="cart-quantity">
                     <div class="quantity-wrap">
                       <label for="modal-cart-quantity-1">Количество:</label>
-                      <select class="cart-quantity-select" name="item-quantity" id="modal-cart-quantity-1">
-                        <option value="100">100</option>
-                      </select>
+                      <input type="number" min="1" value="1" id="modal-cart-quantity-1">
                     </div>
                   </td>
                   <td class="cart-price">
@@ -137,9 +136,7 @@
                   <td class="cart-quantity">
                     <div class="quantity-wrap">
                       <label for="modal-cart-quantity-2">Количество:</label>
-                      <select class="cart-quantity-select" name="item-quantity" id="modal-cart-quantity-2">
-                        <option value="100">100</option>
-                      </select>
+                      <input type="number" min="1" value="1" id="modal-cart-quantity-2">
                     </div>
                   </td>
                   <td class="cart-price">
@@ -246,9 +243,7 @@
                 <td class="cart-quantity">
                   <div class="quantity-wrap">
                     <label for="cart-quantity-1">Количество:</label>
-                    <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-1">
-                      <option value="100">100</option>
-                    </select>
+                    <input type="number" min="1" value="1" id="cart-quantity-1">
                   </div>
                 </td>
                 <td class="cart-price">
@@ -277,9 +272,7 @@
                 <td class="cart-quantity">
                   <div class="quantity-wrap">
                     <label for="cart-quantity-2">Количество:</label>
-                    <select class="cart-quantity-select" name="item-quantity" id="cart-quantity-2">
-                      <option value="100">100</option>
-                    </select>
+                    <input type="number" min="1" value="1" id="cart-quantity-2">
                   </div>
                 </td>
                 <td class="cart-price">
@@ -366,5 +359,8 @@
     </footer>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/core.js"></script>
+    <script type="text/javascript" src="js/number.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
