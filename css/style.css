@@ -345,7 +345,6 @@ li {
   position: absolute;
   top: -23px;
   right: -78px;
-  z-index: 2;
   width: 1123px;
   height: 549px;
   background: url(../img/item-line19.png) no-repeat;
@@ -356,7 +355,6 @@ li {
   position: absolute;
   top: -26px;
   left: -80px;
-  z-index: 2;
   width: 1135px;
   height: 595px;
   background: url(../img/item-line14.png) no-repeat;
@@ -704,6 +702,19 @@ li {
   background-image: linear-gradient(#ef49a7, #99356e);
   border: none;
   border-radius: 3px;
+  outline: none;
+}
+
+.add-to-cart:focus,
+.add-to-cart:active,
+.add-to-cart:visited,
+.add-to-cart:hover {
+  outline: none;
+}
+
+.add-to-cart:active {
+  background-image: linear-gradient(#ef49a7, #99356e);
+  box-shadow: none;
 }
 
 .add-to-cart::before {
@@ -2511,11 +2522,14 @@ th {
     right: 7px;
   }
 
-  .mobile-menu-input:checked ~ label + ul {
+/*  .mobile-menu-input:checked ~ label + ul {
     display: block;
-    /*display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;*/
+    max-height: calc(100vh - 40px);
+    overflow-y: scroll;
+  }*/
+
+  .main-menu-open {
+    display: block;
     max-height: calc(100vh - 40px);
     overflow-y: scroll;
   }
