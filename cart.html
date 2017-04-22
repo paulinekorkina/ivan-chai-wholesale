@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <title>Интернет-магазин иван-чая</title>
+    <link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
     <link href="css/number.css" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet">
@@ -83,7 +84,7 @@
           <h2 class="cart-heading">Корзина</h2>
           <button class="cart-close-btn" data-dismiss="modal"></button>
           <form class="cart-form modal-body">
-            <div class="table-wrap modal-table-wrap">
+            <div class="table-wrap modal-table-wrap mCustomScrollbar" data-mcs-axis="x" data-mcs-theme="inset">
               <table class="cart-table modal-cart-table">
                 <tr class="cart-head">
                   <th class="cart-name-heading" colspan="2">Название</th>
@@ -219,7 +220,7 @@
       <section class="place-order main-container">
         <h2 class="place-order-heading">Оформить заказ</h2>
         <form class="cart-form place-order-form">
-          <div class="table-wrap">
+          <div class="table-wrap mCustomScrollbar" data-mcs-axis="x" data-mcs-theme="inset">
             <table class="cart-table place-order-table">
               <tr class="cart-head">
                 <th class="cart-name-heading" colspan="2">Название</th>
@@ -361,6 +362,7 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/core.js"></script>
     <script type="text/javascript" src="js/number.js"></script>
+    <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>
