@@ -638,9 +638,31 @@ li {
   background-position: 72px 13px;
 }
 
-/*Стили для input type="number"*/
+/*Стили для input type="number", плагин formstone*/
 
+.fs-number {
+  width: 90px;
+  height: 32px;
+  position: relative;
+}
 
+.fs-number-arrow {
+  position: absolute;
+  right: 0;
+  width: 32px;
+  height: 16px;
+  font-size: 0;
+}
+
+.fs-number-up {
+  top: 0;
+  background: url("../img/arrow-up.png") center 8px no-repeat;
+}
+
+.fs-number-down {
+  bottom: 0;
+  background: url("../img/arrow.png") center 2px no-repeat;
+}
 
 /*Окончание стилей для input type="number"*/
 
