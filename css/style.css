@@ -132,12 +132,23 @@ li {
   background-repeat: no-repeat;
 }
 
+.main-menu .cart-icon:focus,
+.main-menu .cart-icon:active,
+.main-menu .cart-icon:visited {
+  outline: none;
+}
+
 .cart-item-count {
   position: absolute;
   top: 9px;
-  right: 7px;
+  right: 3px;
+  width: 16px;
+  height: 16px;
   font-weight: 700;
-  font-size: 1em; /* 16/16 */
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  vertical-align: middle;
   color: #1b1a1a;
 }
 
@@ -576,7 +587,7 @@ li {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 108px;
+  width: 124px;
 }
 
 .weight-wrap {
@@ -610,7 +621,7 @@ li {
 
 .order-params select {
   height: 32px;
-  padding: 0 16px;
+  padding: 0 0 0 12px;
   box-sizing: border-box;
   -webkit-appearance: none;
   font-size: 0.875em; /* 14/16 */
@@ -630,8 +641,8 @@ li {
 }
 
 .weight-wrap select {
-  width: 108px;
-  background-position: 85px 13px;
+  width: 124px;
+  background-position: 101px 13px;
 }
 
 .order-params input[id|='item-quantity'],
@@ -1857,7 +1868,7 @@ th {
 }
 
 .cart-table .weight-wrap {
-  width: 108px;
+  width: 120px;
   margin: 0;
 }
 
@@ -1869,7 +1880,7 @@ th {
   /*width: 175px;*/
   height: 32px;
   /*margin-right: -20px;*/
-  padding: 0 17px;
+  padding: 0 12px;
   box-sizing: border-box;
   -webkit-appearance: none;
   font-size: 0.875em; /* 14/16 */
@@ -1888,8 +1899,9 @@ th {
   display: none;
 }
 
-.cart-weight-select {
-  width: 108px;
+.weight-wrap .cart-weight-select {
+  width: 120px;
+  background-position: 97px 13px;
 }
 
 .cart-form input[id|='cart-quantity'],
@@ -2006,7 +2018,7 @@ th {
 
 .place-order-table {
   /*margin-bottom: 75px;*/
-  min-width: 750px;
+  /*min-width: 750px;*/
 }
 
 .shipping-heading {
@@ -2275,17 +2287,6 @@ th {
   .feature-img img {
     margin-right: 0;
   }
-
-  /*.main-menu a {
-    font-size: 0.75em;
-  }
-
-  .cart-item-count {
-    top: 12px;
-    right: 10px;
-  }*/
-
-
 }
 
 @media screen and (max-width: 1000px) {
@@ -2340,11 +2341,6 @@ th {
 
   .main-menu a {
     font-size: 0.6875em;
-  }
-
-  .cart-item-count {
-    top: 11px;
-    right: 8px;
   }
 
   .main-header {
@@ -2405,9 +2401,9 @@ th {
     overflow-y: auto;
   }*/
 
-  /*.place-order-table {
-    width: 750px;
-  }*/
+  .place-order-table {
+    min-width: 750px;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -2525,11 +2521,6 @@ th {
   .main-menu a {
     padding: 15px 0 15px 10px;
     font-size: 0.75em;
-  }
-
-  .cart-item-count {
-    top: 11px;
-    right: 7px;
   }
 
 /*  .mobile-menu-input:checked ~ label + ul {
