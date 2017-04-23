@@ -1969,8 +1969,18 @@ th {
   border-radius: 3px;
 }
 
+.place-order-btn:hover,
+.place-order-btn:active,
+.place-order-btn:focus,
+.place-order-btn:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .modal-place-btn {
   margin-top: 37px;
+  background-image: linear-gradient(#b1ea00, #6f9803);
+  border: none;
 }
 
 .place-order-btn::before {
