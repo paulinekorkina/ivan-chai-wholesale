@@ -1855,12 +1855,14 @@ th {
 }
 
 .cart-delete-icon {
+  display: inline-block;
   width: 18px;
   height: 18px;
   padding: 0;
   background-color: transparent;
   background-image: url("../img/cart-delete.png");
   border: none;
+  cursor: pointer;
 }
 
 .cart-subtotal {
