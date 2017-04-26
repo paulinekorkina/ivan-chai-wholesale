@@ -168,6 +168,21 @@
       </div>
     </div>
 
+    <!-- Модальное окно подтверждения заказа -->
+
+    <div id="confirmModal" class="modal fade">
+      <div class="modal-dialog confirm-modal-wrap">
+        <div class="confirm-modal modal-content">
+          <button class="close-btn" data-dismiss="modal"></button>
+          <h2 class="confirm-heading">Спасибо за ваш заказ!</h2>
+          <div class="modal-body confirm-body">
+            <p>Мы скоро свяжемся с вами, чтобы уточнить Оплату и доставку! Спасибо! </p>
+            <button class="confirm-modal-btn" data-dismiss="modal">Закрыть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Окончание блоков модальных окон -->
 
     <header class="main-header">
@@ -328,7 +343,7 @@
               <option value="russia"></option>
             </select>
           </div>
-          <button class="place-order-btn" type="submit">Отправить заказ</button>
+          <button class="place-order-btn" type="submit" data-target="#confirmModal" data-toggle="modal">Отправить заказ</button>
         </form>
       </section>
       <section class="vk-feedback">
