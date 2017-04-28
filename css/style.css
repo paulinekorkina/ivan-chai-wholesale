@@ -571,7 +571,7 @@ main {
 }
 
 .catalog {
-  margin-bottom: 67px;
+  margin-bottom: 9px;
 }
 
 .catalog-wrap {
@@ -1033,7 +1033,8 @@ main {
   text-align: left;
 }
 
-.order b {
+.order b,
+b {
   font-weight: 700;
 }
 
@@ -1109,12 +1110,12 @@ main {
   margin: 0 0 20px 0;
   font-weight: 300;
   font-size: 0.875em; /* 14/16 */
-  line-height: 1.5;
+  line-height: 20px;
   color: #1b1a1a;
 }
 
 .payment p:last-of-type {
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .payment-method {
@@ -1134,7 +1135,7 @@ main {
 
 .delivery {
   max-width: 960px;
-  margin: 0 auto 75px auto;
+  margin: 0 auto 125px auto;
   padding-top: 60px;
   margin-top: -60px;
 }
@@ -1157,7 +1158,7 @@ main {
 }
 
 .delivery p:last-of-type {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .delivery b {
