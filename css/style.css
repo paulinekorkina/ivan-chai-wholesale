@@ -361,10 +361,14 @@ li {
   background-size: contain;
 }
 
+main {
+  background: url("../img/main-bg.png") center 60px no-repeat;
+}
+
 .price-request {
   max-width: 960px;
-  margin: 0 auto 80px auto;
-  padding: 40px 55px;
+  margin: 0 auto 85px auto;
+  padding: 38px 55px 30px 55px;
   box-sizing: border-box;
   border: 1px solid #d8aac4;
 }
@@ -476,6 +480,94 @@ li {
   font-weight: 700;
   color: #1b1a1a;
   text-align: center;
+}
+
+.cooperation {
+  max-width: 960px;
+  margin: 0 auto 90px auto;
+}
+
+.coop-heading {
+  margin: 0 0 45px 0;
+  font-weight: 700;
+  font-size: 1.875em; /* 30/16 */
+  color: #272528;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.coop-item-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.coop-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 29.58333333333333%; /* 284/960 */
+  height: 457px;
+  margin-right: 5%; /* 48/960 */
+  padding: 9px 11px 56px 11px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: top;
+  border: 1px solid #d8aac4;
+}
+
+.coop-item:last-child {
+  margin-right: 0;
+}
+
+.coop-item-img {
+  max-width: 261px;
+  width: 100%;
+  height: auto;
+}
+
+.coop-item-btn {
+  position: relative;
+  display: block;
+  width: 175px;
+  margin: 0 auto;
+  padding: 7px 0 7px 0;
+  vertical-align: top;
+  font-weight: 700;
+  font-size: 11px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #9c3670;
+  background-image: linear-gradient(#ef49a7, #99356e);
+  border: none;
+  border-radius: 3px;
+}
+
+.coop-item-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -50px;
+  display: block;
+  width: 66px;
+  height: 50px;
+  background: url("../img/sprite.png") -5px -57px no-repeat;
+}
+
+.coop-item-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 20px;
+  height: 100%;
+  background-color: #9c3670;
+  background-image: linear-gradient(#ef49a7, #99356e);
+  border-radius: 3px;
 }
 
 .catalog {
@@ -939,6 +1031,10 @@ li {
   line-height: 1.428571428571429; /*20/14*/
   color: #1b1a1a;
   text-align: left;
+}
+
+.order b {
+  font-weight: 700;
 }
 
 .order-bolder {
