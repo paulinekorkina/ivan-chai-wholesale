@@ -55,12 +55,13 @@ button {
   font-family: "Segoe UI", "Arial", sans-serif;
 }
 
-/*div,
+div,
 article,
 ul {
   outline: 1px dashed orangered;
 }
 
+h1,
 h2,
 h3,
 b,
@@ -68,11 +69,11 @@ p,
 a,
 li {
   outline: 1px dashed #888888;
-}*/
+}
 
 .main-header {
   /*padding-bottom: 10px;*/
-  margin-bottom: 65px;
+  margin-bottom: 85px;
   padding-top: 124px;
   background: url("../img/header.png") top center no-repeat;
 }
@@ -103,7 +104,7 @@ li {
 
 .main-menu li {
   display: inline-block;
-  margin-right: 25px;
+  margin-right: 32px;
   vertical-align: top;
 }
 
@@ -159,12 +160,13 @@ li {
   align-content: space-between;
   max-width: 960px;
   min-height: 447px;
-  margin: 0 auto 52px auto;
+  margin: 0 auto;
 }
 
 .logo {
   flex-basis: 600px;
   margin-right: auto;
+  margin-bottom: 55px;
   padding-top: 3px;
 }
 
@@ -182,15 +184,16 @@ li {
 .logo h1 {
   margin: 0;
   font-weight: 700;
-  font-size: 0.75em; /* 12/16 */
+  font-size: 0.875em; /* 14/16 */
+  line-height: 18px;
   color: #312c2e;
-  text-transform: uppercase;
   /*letter-spacing: 0.1;*/
 }
 
 .contacts {
   flex-basis: 320px;
   /*margin-left: auto;*/
+  margin-bottom: 55px;
   text-align: right;
   font-weight: 700;
 }
@@ -231,50 +234,87 @@ li {
 
 .contacts-tip {
   display: inline-block;
-  max-width: 244px;
+  max-width: 190px;
   margin: 0;
   font-size: 0.875em; /* 14/16 */
   line-height: 1.428571428571429; /* 20/14 */
+  text-transform: uppercase;
 }
 
 .header-text {
   flex-basis: 330px;
   align-self: flex-end;
   margin-right: auto;
+  padding-top: 52px;
 }
 
-.header-text p {
+.header-text-big {
+  margin-bottom: 22px;
+  font-weight: 700;
+  font-size: 1.625em; /*26/16*/
+  color: #ffffff;
+}
+
+.header-text-big p {
   display: inline-block;
   max-width: 370px;
   margin: 0;
   margin-bottom: 3px;
   padding: 3px 12px 4px 18px;
-  font-weight: 700;
-  font-size: 1.625em; /*26/16*/
-  color: #ffffff;
   background-color: #ae3f7e;
   text-transform: uppercase;
 }
 
-.header-text p:last-child {
+.header-text-big p:last-child {
   margin-bottom: 0;
   padding-bottom: 3px;
 }
 
-.header-reviews {
+.header-text-small {
+  font-weight: 700;
+  font-size: 1.125em; /*18/16*/
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.header-text-small p {
+  display: inline-block;
+  max-width: 370px;
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0 12px 0 18px;
+  background-color: #ae3f7e;
+  text-transform: uppercase;
+}
+
+.header-text-small p:last-child {
+  margin-bottom: 0;
+}
+
+.header-request-price {
   flex-basis: 269px;
   min-height: 197px;
   margin-bottom: -17px;
-  padding-top: 61px;
+  padding-top: 80px;
+  font-weight: 700;
+  font-size: 26px;
   text-align: center;
   color: #ffffff;
-  background: url("../img/review.png") bottom right no-repeat;
+  text-transform: uppercase;
+  background: url("../img/header-request-price.png") top right no-repeat;
 }
 
-.header-reviews a:hover,
-.header-reviews a:focus,
-.header-reviews a:active,
-.header-reviews a:visited {
+.header-request-price a {
+  display: block;
+  padding: 0 60px 0 75px;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #891155;
+}
+
+.header-request-price a:hover,
+.header-request-price a:focus,
+.header-request-price a:active,
+.header-request-price a:visited {
    color: #ffffff;
    text-decoration: none;
    outline: none;
@@ -315,10 +355,127 @@ li {
   display: block;
   width: 12.5%; /* 120/960 */
   height: 120px;
-  margin: 0 auto;
+  margin: -10px auto 0 auto;
   font-size: 0;
   background: url("../img/down-btn.png") center top no-repeat;
   background-size: contain;
+}
+
+.price-request {
+  max-width: 960px;
+  margin: 0 auto 80px auto;
+  padding: 40px 55px;
+  box-sizing: border-box;
+  border: 1px solid #d8aac4;
+}
+
+.price-request-wrap {
+  margin-bottom: 28px;
+}
+
+.ws-benefits {
+  float: left;
+  width: 43.75%; /* 420/960 */
+}
+
+.benefit-list {
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.benefit-item {
+  margin-bottom: 18px;
+  padding: 5px 0 5px 45px;
+  font-size: 18px;
+  line-height: 1.285714285714286; /*18/14*/
+  background: url("../img/benefit-icon.png") left center no-repeat;
+}
+
+.benefit-item:last-child {
+  margin-bottom: 0;
+}
+
+.price-request-form {
+  float: right;
+  width: 44%; /*374/850*/
+  text-align: center;
+}
+
+.price-request-form h2 {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #a8256f;
+  text-transform: uppercase;
+}
+
+.price-request-form label {
+  display: none;
+}
+
+.price-request-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 11px;
+  padding: 11px 0 10px 13px;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid #6e6e6e;
+}
+
+.ws-request-email {
+  margin-bottom: 0;
+}
+
+.ws-request-btn {
+  position: relative;
+  display: block;
+  width: 215px;
+  margin: 24px auto 0 auto;
+  padding: 10px 0 9px 0;
+  vertical-align: top;
+  font-weight: 700;
+  font-size: 11px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #9c3670;
+  background-image: linear-gradient(#ef49a7, #99356e);
+  border: none;
+  border-radius: 3px;
+}
+
+.ws-request-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -60px;
+  display: block;
+  width: 66px;
+  height: 50px;
+  background: url("../img/sprite.png") -5px -57px no-repeat;
+}
+
+.ws-request-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 10px;
+  height: 100%;
+  background-color: #9c3670;
+  background-image: linear-gradient(#ef49a7, #99356e);
+  border-radius: 3px;
+}
+
+.price-request-text {
+  font-weight: 700;
+  color: #1b1a1a;
+  text-align: center;
 }
 
 .catalog {
@@ -929,48 +1086,6 @@ li {
   margin-right: 0;
 }
 
-.benefit {
-  max-width: 960px;
-  margin: 0 auto 75px auto;
-  padding-top: 60px;
-  margin-top: -60px;
-}
-
-.benefit h2 {
-  margin: 0 0 37px 0;
-  font-weight: 700;
-  font-size: 1.875em; /* 30/16 */
-  color: #272528;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-.benefit-left {
-  float: left;
-}
-
-.benefit-right {
-  float: right;
-}
-
-.benefit-left,
-.benefit-right {
-  width: 50%;
-  margin: 0;
-}
-
-.benefit-list {
-  list-style: none;
-  padding: 0;
-}
-
-.benefit-item {
-  margin-bottom: 8px;
-  padding: 5px 20px 5px 45px;
-  font-size: 0.875em; /*14/16*/
-  line-height: 1.285714285714286; /*18/14*/
-  background: url("../img/benefit-icon.png") left center no-repeat;
-}
 
 .features {
   max-width: 960px;
