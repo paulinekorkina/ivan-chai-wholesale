@@ -25,7 +25,7 @@
           <form class="callback-form modal-body">
             <label for="callback-phone">+7</label>
             <input id="callback-phone" class="callback-phone" type="text">
-            <button class="btn callback-modal-btn" type="submit">Жду звонка</button>
+            <button class="btn callback-modal-btn" type="submit" data-dismiss="modal">Жду звонка</button>
           </form>
         </div>
       </div>
@@ -164,6 +164,40 @@
             <button class="go-on-btn" data-dismiss="modal">Продолжить покупки</button>
             <a class="place-order-btn modal-place-btn" href="cart.html">Оформить заказ</a>
           </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно запроса оптового прайса -->
+
+    <div id="requestModal" class="modal fade">
+      <div class="request-modal-wrap modal-dialog">
+        <div class="request-modal modal-content">
+          <h2 class="request-modal-heading">Запросить оптовый прайс и подробную информацию по сотрудничеству</h2>
+          <button class="close-btn" data-dismiss="modal"></button>
+          <form class="modal-request-form modal-body">
+            <label for="ws-request-name">Введите имя</label>
+            <input id="ws-request-name" class="ws-request-name" type="text" placeholder="Имя">
+            <label for="ws-request-phone">Введите телефон</label>
+            <input id="ws-request-phone" class="feedback-phone" type="text" placeholder="Телефон">
+            <label for="ws-request-email">Введите е-мейл</label>
+            <input id="ws-request-email" class="ws-request-email" type="text" placeholder="Е-мейл">
+            <button class="btn ws-request-btn" type="submit" data-dismiss="modal" data-target="#wsconfirmModal" data-toggle="modal">Получить оптовый прайс</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Модальное окно подтверждения запроса прайса -->
+
+    <div id="wsconfirmModal" class="modal fade">
+      <div class="modal-dialog wsconfirm-modal-wrap">
+        <div class="wsconfirm-modal modal-content">
+          <button class="close-btn" data-dismiss="modal"></button>
+          <div class="modal-body wsconfirm-body">
+            <p>В ближайшее время мы с вами свяжемся и отправим прайс-лист.<br> Спасибо за обращение в нашу компанию!</p>
+            <button class="wsconfirm-btn" data-dismiss="modal">Закрыть</button>
+          </div>
         </div>
       </div>
     </div>
@@ -1143,11 +1177,11 @@
         <input class="mobile-menu-input" type="checkbox" name="mobile-menu" id="btn-menu" />
         <label class="mobile-menu-btn" for="btn-menu">Меню</label>
         <ul class="main-menu main-container">
-          <li><a class="menu-link" href="#">Формы сотрудничества</a></li>
-          <li><a class="menu-link" href="#order">Получить прайс</a></li>
-          <li><a class="menu-link" href="#payment">Наша продукция</a></li>
-          <li><a class="menu-link" href="#delivery">Оплата</a></li>
-          <li><a class="menu-link" href="#benefit">Доставка свойства</a></li>
+          <li><a class="menu-link" href="#cooperation">Формы сотрудничества</a></li>
+          <li><a class="menu-link" href="#price-request">Получить прайс</a></li>
+          <li><a class="menu-link" href="#catalog">Наша продукция</a></li>
+          <li><a class="menu-link" href="#payment">Оплата</a></li>
+          <li><a class="menu-link" href="#delivery">Доставка свойства</a></li>
           <li><a class="menu-link" href="#reviews">Отзывы</a></li>
           <li><a class="menu-link cart-icon" href="#cartModal" data-toggle="modal"">
             <div class="cart-item-count">22</div>
@@ -1180,13 +1214,13 @@
           </div>
         </div>
         <div class="header-request-price">
-          <a href="#">Заказать оптовый прайс</a>
+          <a href="#requestModal" data-toggle="modal">Заказать оптовый прайс</a>
         </div>
       </div>
       <div class="down-btn">Вниз</div>
+      <div id="price-request" class="anchor"></div>
     </header>
     <main>
-
       <section class="price-request main-container">
         <div class="price-request-wrap clearfix">
           <div class="ws-benefits">
@@ -1207,38 +1241,38 @@
             <input id="ws-request-phone" class="feedback-phone" type="text" placeholder="Введите телефон">
             <label for="ws-request-email">Введите е-мейл</label>
             <input id="ws-request-email" class="ws-request-email" type="text" placeholder="Введите е-мейл">
-            <button class="btn ws-request-btn" type="submit">Заказать оптовый прайс</button>
+            <button class="btn ws-request-btn" type="submit" data-target="#wsconfirmModal" data-toggle="modal">Заказать оптовый прайс</button>
           </form>
         </div>
         <p class="price-request-text">
           Мелкий и крупный опт. Партии от 1 кг до 1000 кг с доставкой по всей России и СНГ.
         </p>
       </section>
-      <section class="cooperation main-container">
+      <section id="cooperation" class="cooperation main-container">
         <h2 class="coop-heading">Предлагаем следующие формы сотрудничества:</h2>
         <div class="coop-item-wrap">
           <div class="coop-item">
             <img class="coop-item-img" src="img/coop-img-1.jpg" alt="">
             <p class="coop-item-text">Готовый к продаже продукт под нашей торговой маркой</p>
-            <a class="coop-item-btn" href="#">Подробнее</a>
+            <a class="coop-item-btn" href="#order">Подробнее</a>
           </div>
           <div class="coop-item">
             <img class="coop-item-img" src="img/coop-img-2.jpg" alt="">
             <p class="coop-item-text">Готовый к продаже продукт под вашей торговой маркой (СТМ), изготовленный на нашем производстве</p>
-            <a class="coop-item-btn" href="#">Подробнее</a>
+            <a class="coop-item-btn" href="#order">Подробнее</a>
           </div>
           <div class="coop-item">
             <img class="coop-item-img" src="img/coop-img-3.jpg" alt="">
             <p class="coop-item-text">Чай россыпью</p>
-            <a class="coop-item-btn" href="#">Подробнее</a>
+            <a class="coop-item-btn" href="#order">Подробнее</a>
           </div>
         </div>
       </section>
 
       <!-- НАЧАЛО КАТАЛОГА -->
 
-      <h2 class="catalog-heading">Наша продукция</h2>
-      <section id="catalog" class="catalog">
+      <h2 id="catalog" class="catalog-heading">Наша продукция</h2>
+      <section class="catalog">
         <div class="catalog-wrap main-container">
 
         <!-- item 1 -->
